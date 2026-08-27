@@ -26,11 +26,65 @@ def style_background_dashboard():
 def style_base_layout():
     st.markdown("""
         <style>
+            @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Outfit:wght@100..900&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Outfit:wght@100..900&display=swap');
+
             /*hide top bar default on streamlit*/
 
-            #MainMenu, footer, header{
+            /*#MainMenu, footer, header{
                 visibility:hidden;   
+                }*/
+
+            .block-container{
+                padding-top:1.5rem !important
                 }
+
+            h1 {
+                font-family: "Climate Crisis", sans-serif !important;
+                font-size: 3.5rem !important;
+                line-heigth: 1.1 !important;
+                margin-bottom:0rem !important;
+                    }
+
+            h2 {
+                font-family: "Climate Crisis", sans-serif !important;
+                font-size: 3.5rem !important;
+                line-heigth: 1.1 !important;
+                margin-bottom:0rem !important;
+                }
+
+            h3, h4, p{
+                font-family: "Outfit", sans-serif !important;
+            }
+             
+            button{
+                border-radius: 1.5rem  !important;
+                background: #5865F2 !important;
+                color: white !important;
+                padding: 10px 20px !important;
+                border: none !important;
+                transition: transform 0.25 ease-in-out !important;
+                }
+
+            button[kind="secondary"]{
+                border-radius: 1.5rem  !important;
+                background: #EB459E !important;
+                color: white !important;
+                padding: 10px 20px !important;
+                border: none !important;
+                transition: transform 0.25 ease-in-out !important;
+                }
+
+            button[kind="tertiary"]{
+                border-radius: 1.5rem  !important;
+                background: black !important;
+                color: white !important;
+                padding: 10px 20px !important;
+                border: none !important;
+                transition: transform 0.25 ease-in-out !important;
+                }
+                button:hover{
+                transform: scale(1.05)}
         </style>        """
 
             ,unsafe_allow_html=True)
