@@ -6,6 +6,11 @@ def style_background_home():
              .stApp{
              background : #5865F2 !important;
              }
+
+             .stApp div[data-testid="stColumn"]{
+                    background-color:#E0E3FF !important;
+                    padding:2.5rem !important;
+                    border-radius: 5rem !important;}
             </style>
                 """
 
@@ -16,6 +21,7 @@ def style_background_dashboard():
             <style>
              .stApp{
              background : #E0E3FF !important;
+             color : black !important;
              }
             </style>
                 """
@@ -27,34 +33,33 @@ def style_base_layout():
     st.markdown("""
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Outfit:wght@100..900&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Outfit:wght@100..900&display=swap');
-
+            @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
             /*hide top bar default on streamlit*/
 
-            /*#MainMenu, footer, header{
+            #MainMenu, footer, header{
                 visibility:hidden;   
-                }*/
+                }
 
             .block-container{
                 padding-top:1.5rem !important
                 }
 
             h1 {
-                font-family: "Climate Crisis", sans-serif !important;
+                font-family: "Outfit", sans-serif !important;
                 font-size: 3.5rem !important;
-                line-heigth: 1.1 !important;
+                line-heigth: 0.8 !important;
                 margin-bottom:0rem !important;
-                    }
+                    } 
 
             h2 {
-                font-family: "Climate Crisis", sans-serif !important;
-                font-size: 3.5rem !important;
-                line-heigth: 1.1 !important;
+                font-family: "Outfit", sans-serif !important;
+                font-size: 2.5rem !important;
+                line-heigth: 0.8 !important;
                 margin-bottom:0rem !important;
                 }
 
             h3, h4, p{
-                font-family: "Outfit", sans-serif !important;
+                font-family: "Outfit", sans-serif ;
             }
              
             button{

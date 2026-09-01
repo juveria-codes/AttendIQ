@@ -9,14 +9,18 @@ def home_screen():
     style_base_layout()
     style_background_home()
 
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns(2, gap="large")
 
     with col1:
-        if st.button('Teacher portal'):
-            st.session_state['login_type'] = 'teacher'
-            st.rerun()
+        st.header("I'm Teacher")
+        st.image("src/ui/teacher.png", width=130)
+        if st.button('Teacher portal',type="primary"):
+             st.session_state['login_type'] = 'teacher'
+             st.rerun()
 
     with col2:
-        if st.button('Student portal'):
+        st.header("I'm Student")
+        st.image("src/ui/student.png", width=120)
+        if st.button('Student portal',type="primary"):
             st.session_state['login_type'] = 'student'
             st.rerun()
