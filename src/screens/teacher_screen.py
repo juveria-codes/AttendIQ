@@ -119,4 +119,6 @@ def teacher_screen_register():
     with btnc2:
         if st.button("Login Instead",icon=':material/passkey:', width='stretch', type='primary'):
             st.session_state.teacher_login_type='login'
+
+
             
