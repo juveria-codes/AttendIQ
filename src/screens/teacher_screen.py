@@ -2,7 +2,8 @@ import streamlit as st
 from src.ui.base_layout import style_background_dashboard, style_base_layout
 from src.components.header import header_dashboard
 from src.database.db import create_teacher, check_teacher_exists, teacher_login, get_teacher_subjects
-from src.components.dialog_create_sub import create_subject_dialog
+from src.components.dialog_create_subject import create_subject_dialog
+from src.components.dialog_share_subject import share_subject_dialog
 from src.components.subject_card import subject_card 
 def teacher_screen():
 
@@ -89,7 +90,7 @@ def teacher_tab_manage_subjects():
             ]
         def share_btn():
             if st.button(f"Share Code: {sub['name']}", key=f"share_{sub['subject_code']}", icon=":material/share:"):
-                share_subject_dialog(sub['name'], sub['subjec_code'])
+                share_subject_dialog(sub['name'], sub['subject_code'])
             st.space()
 
         subject_card(
