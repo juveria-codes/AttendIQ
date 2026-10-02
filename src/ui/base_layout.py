@@ -53,6 +53,7 @@ def style_base_layout():
 
             h2 {
                 font-family: "Outfit", sans-serif !important;
+                color:black !important;
                 font-size: 2.5rem !important;
                 line-heigth: 0.8 !important;
                 margin-bottom:0rem !important;

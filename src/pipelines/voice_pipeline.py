@@ -17,7 +17,7 @@ def get_voice_embedding(audio_bytes):
         embedding = encoder.embed_utterance(wav)
         return embedding.tolist()
     except Exception as e:
-        st.error('Voice recog error')
+        st.error('Voice recognition error')
         return None
 
 def identify_speaker(new_embedding, candidates_dict, threshold=0.65):
@@ -62,11 +62,11 @@ def process_bulk_audio(audio_bytes, candidates_dict, threshold=0.65):
             sid, score = identify_speaker(embedding, candidates_dict, threshold)
 
             if sid:
-                if sid not in identify_speaker or score > identified_results[sid]:
+                if sid not in identified_results or score > identified_results[sid]:
                     identified_results[sid] = score
 
         return identified_results
 
     except Exception as e:
-        st.error('Bulk process error')
+        st.error(f'Bulk process error {e}')
         return {}
