@@ -24,7 +24,7 @@ def header_home():
         "
     >
     <div>
-    <h1>SNAP CLASS</h1>
+    <h1>AttendIQ</h1>
     </div>
 </div>
 """
@@ -52,8 +52,8 @@ def header_dashboard():
             object-fit: contain;
         "
     >
-    <div style="color:#5865F2">
-    <h2>Snap Class</h2>
+    <div style="color:#5865F2 !important">
+    <h2>AttendIQ</h2>
     </div>
 </div>
 """
