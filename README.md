@@ -116,7 +116,6 @@ SUPABASE_URL = "your-supabase-project-url"
 SUPABASE_KEY = "your-supabase-key"
 ```
 
-> ⚠️ Never commit secrets to GitHub. Make sure `.streamlit/secrets.toml` is in `.gitignore`.
 
 ### Run the app
 
