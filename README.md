@@ -90,7 +90,7 @@ AttendIQ/
 
 ### Prerequisites
 - Python 3.10 or higher
-- A [Supabase](https://supabase.com) project with tables for `teachers`, `students`, `subjects`, `subject_students` and attendance records
+- A [Supabase](https://supabase.com) project with tables for `teachers`, `students`, `subjects`, `subject_students` and `attendance_records`
 
 ### Installation
 
